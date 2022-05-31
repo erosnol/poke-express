@@ -1,9 +1,5 @@
 # poke-express
-This was an assigment using the following instructions. 
-
-# wdi-10-chi
-
-![Kira and Myles in the 60s](https://i.pinimg.com/736x/1a/2b/b7/1a2bb7a785522eed1a6d597174fc3bfb--star-trek-images-starship-enterprise.jpg)
+This was an assigment using the following instructions. It took about 5 hours to complete using class notes and some previous githubs. I copied and pasted this ReadMe from https://github.com/IamCharlesM/wdi-10-hw11-express-index-show-poke/blob/master/README.md thanks a lot, hope this helps whoever is learning EJS 
 
 ---
 

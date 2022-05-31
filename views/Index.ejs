@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Show.ejs">
+    <title>
+        <%= pageTitle %>
+    </title>
+</head>
+
+<body>
+    <h1>See all pokemon!</h1>
+
+    <nav>
+        <a href="/">Main</a>
+    </nav>
+
+    <ul>
+        <% data.map ((pokemon, index)=> { %>
+            <li>
+                <%= pokemon.name.toUpperCase().substring(0, 1) + pokemon.name.substr(1).toLowerCase() %>
+                <a href="/pokemon/<%=index%>"> Got to Pokemon..</a>
+                <img src= <%=`${pokemon.img}.jpg` %> width= "350" height="250" alt="">
+            </li>
+
+            <% }); %>
+    </ul>
+
+
+
+</body>
+
+</html>

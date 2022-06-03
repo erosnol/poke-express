@@ -7,23 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Show.ejs">
     <title>
-        <% pokemon.name %> page!
+        <%=pokemon.name%> page!
     </title>
 </head>
 
 <body>
-    <h1>Gotta Catch 'Em All</h1>
+    <h1>
+        <%= pageHeader %>
+    </h1>
     <nav>
-        <a href="/pokemon/">back</a>
+        <a href="/pokemon/">back</a> |
+        <a href="/">Main</a>
     </nav>
 
-    <h2>  <%= pokemon.name.toUpperCase().substring(0, 1) + pokemon.name.substr(1).toLowerCase() %>! </h2>
+    <h2>
+        <%= pokemon.name.toUpperCase().substring(0, 1) + pokemon.name.substr(1).toLowerCase() %>!
+    </h2>
 
-    <img src= <%=`${pokemon.img}.jpg` %> width= "350" height="250" alt="">
+    <img src=<%=`${pokemon.img}.jpg` %> width= "350" height="250" alt="">
 
-    
-
-    
 
 
 

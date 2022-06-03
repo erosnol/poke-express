@@ -15,15 +15,16 @@
     <h1>See all pokemon!</h1>
 
     <nav>
-        <a href="/">Main</a>
+        <a href="/">Main</a> |
+        <a href="/pokemon/new">Add a new Pokemon</a>
     </nav>
 
     <ul>
-        <% data.map ((pokemon, index)=> { %>
+        <% pokemon.map ((pokemon, index)=> { %>
             <li>
                 <%= pokemon.name.toUpperCase().substring(0, 1) + pokemon.name.substr(1).toLowerCase() %>
-                <a href="/pokemon/<%=index%>"> Got to Pokemon..</a>
-                <img src= <%=`${pokemon.img}.jpg` %> width= "350" height="250" alt="">
+                    <a href="/pokemon/<%=pokemon._id%>"> Got to Pokemon..</a>
+                    <!-- <img src= <%=`${pokemon.img}.jpg` %> width= "350" height="250" alt=""> -->
             </li>
 
             <% }); %>
